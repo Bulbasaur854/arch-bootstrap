@@ -1,0 +1,62 @@
+# ==========================================================
+# List of packages installed using `pacman`
+# ==========================================================
+
+# Core system / development
+base-devel              # Needed for building AUR packages
+git                     # Version control
+curl                    # Download tool
+wget                    # Download tool
+zsh                     # Shell
+neovim                  # Editor
+tree                    # Directory tree viewer
+rsync                   # File synchronization and backup
+
+# Shell / CLI utilities
+fzf                     # Fuzzy finder
+fd                      # Fast file search
+ripgrep                 # Fast grep replacement
+stow                    # Dotfile manager
+
+# Hyprland + Wayland essentials
+hyprland
+hyprpaper
+hypridle
+hyprlock
+waybar
+xdg-desktop-portal-hyprland
+xdg-user-dirs
+wofi                    # Application launcher
+
+# Audio / multimedia
+pipewire
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+
+# GPU / CPU (NVIDIA + Intel CPU)
+nvidia
+nvidia-utils
+nvidia-settings
+libva-nvidia-driver     # VA-API support for NVIDIA
+egl-wayland             # NVIDIA + Wayland integration
+intel-ucode             # Intel CPU microcode updates
+
+# Filesystem support
+dosfstools
+e2fsprogs
+btrfs-progs
+exfatprogs
+ntfs-3g
+
+# Fonts
+noto-fonts
+noto-fonts-emoji
+noto-fonts-cjk
+
+# Extra / optional packages
+man-db
+man-pages
+openssh
+
