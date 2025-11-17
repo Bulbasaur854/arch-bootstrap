@@ -12,6 +12,10 @@ packages_to_install=(
   "neovim"      # Editor
   "tree"        # Directory tree viewer
   "rsync"       # File synchronization and backup
+  "fzf"         # Fuzzy finder
+  "fd"          # Fast file search
+  "ripgrep"     # Fast grep replacement
+  "stow"        # Dotfile manager
 )
 
 for package in "${packages_to_install[@]}"; do
