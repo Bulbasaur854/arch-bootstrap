@@ -26,8 +26,6 @@ zsh                     # Shell
 neovim                  # Editor
 tree                    # Directory tree viewer
 rsync                   # File synchronization and backup
-
-# Shell / CLI utilities
 fzf                     # Fuzzy finder
 fd                      # Fast file search
 ripgrep                 # Fast grep replacement
