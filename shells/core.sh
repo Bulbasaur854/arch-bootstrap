@@ -16,5 +16,5 @@ packages_to_install=(
 
 echo "Installing pacman packages..."
 for $package in "${packages_to_install[@}"; do
-  sudo pacman -S --noconfirm --needed $package
+  sudo pacman -S --noconfirm --needed "$package"
 done
