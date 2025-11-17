@@ -1,7 +1,7 @@
+#!/usr/bin/env bash
 # ==========================================================
 # Installs core system / development tools
 # ==========================================================
-#!/usr/bin/env bash
 set -e
 
 packages_to_install=(
@@ -14,7 +14,9 @@ packages_to_install=(
   "rsync"       # File synchronization and backup
 )
 
-echo "Installing pacman packages..."
-for package in "${packages_to_install[@}"; do
+for package in "${packages_to_install[@]}"; do
+  echo "Installing: $package"
   sudo pacman -S --noconfirm --needed "$package"
 done
+
+echo "Core packages installed successfully."
