@@ -1,20 +1,23 @@
 #!/usr/bin/env bash
 # ==========================================================
 # Installs core system / development tools.
+# Scripts assume you already setup the next packages via 
+# `archinstall`:
+# -  git                # Version control
+# -  networkmanager     # Main networking service 
+# -  dosfstools         # File system tools
+# -  e2fsprogs          |
+# -  btrfs-progs        |
+# -  exfatprogs         |
+# -  ntfs-3g            |
+# -  intel-ucode        # CPU microcode for Intel
+# -  man-db             # Local documentation
+# -  man-pages          |
+# -  openssh            # SSH control
 # ==========================================================
 set -e
 
 packages_to_install=(
-  "networkmanager"  # Main networking service 
-  "dosfstools"      # File system tools
-  "e2fsprogs"       # |
-  "btrfs-progs"     # |
-  "exfatprogs"      # |
-  "ntfs-3g"         # |
-  "intel-ucode"     # CPU microcode for Intel
-  "man-db"          # Local documentation
-  "man-pages"       # |
-  "openssh"         # SSH control
   "base-devel"      # Needed for building AUR packages
   "curl"            # Download tools
   "wget"            # |
