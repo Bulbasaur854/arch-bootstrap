@@ -5,42 +5,51 @@
 # Packages installed via archinstall
 # =====
 
-networkmanager          # Main networking service 
-dosfstools              # File system tools
-e2fsprogs               # |
-btrfs-progs             # |
-exfatprogs              # |
-ntfs-3g                 # |
-intel-ucode             # CPU microcode for Intel
-man-db                  # Local documentation
-man-pages               # |
-openssh                 # SSH control
+networkmanager                # Main networking service 
+dosfstools                    # File system tools
+e2fsprogs                     # |
+btrfs-progs                   # |
+exfatprogs                    # |
+ntfs-3g                       # |
+intel-ucode                   # CPU microcode for Intel
+man-db                        # Local documentation
+man-pages                     # |
+openssh                       # SSH control
 
 # Packages installed via pacman
 # =====
 
 # Core system / development
-base-devel              # Needed for building AUR packages
-curl                    # Download tool
-wget                    # Download tool
-zsh                     # Shell
-neovim                  # Editor
-tree                    # Directory tree viewer
-rsync                   # File synchronization and backup
-fzf                     # Fuzzy finder
-fd                      # Fast file search
-ripgrep                 # Fast grep replacement
-stow                    # Dotfile manager
+base-devel                    # Needed for building AUR packages
+curl                          # Download tool
+wget                          # Download tool
+zsh                           # Shell
+neovim                        # Editor
+tree                          # Directory tree viewer
+rsync                         # File synchronization and backup
+fzf                           # Fuzzy finder
+fd                            # Fast file search
+ripgrep                       # Fast grep replacement
+stow                          # Dotfile manager
 
 # Hyprland + Wayland essentials
 hyprland
-hyprpaper
-hypridle
-hyprlock
-waybar
-xdg-desktop-portal-hyprland
-xdg-user-dirs
-wofi                    # Application launcher
+hyprpaper                     # Wallpaper uitility
+hypridle                      # Idle management daemon
+hyprlock                      # Screen lock
+waybar                        # Taskbar
+wofi                          # Application launcher
+wl-clipboard                  # Clipboard copy / paste
+cliphist                      # Clipboard history manager
+grim                          # Screenshots utility
+slurp                         # Region screenshot
+brightnessctl                 # Control device brightness
+playerctl                     # CLI media control
+polkit-gnome                  # Authentication agent
+xorg-xwayland                 # Xwayland and portals
+xdg-desktop-portal            # |
+xdg-desktop-portal-hyprland   # |
+xdg-user-dirs                 # |
 
 # Audio / multimedia
 pipewire
