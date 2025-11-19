@@ -5,18 +5,15 @@
 # Packages installed via archinstall
 # =====
 
-networkmanager                # Main networking service 
-dosfstools                    # File system tools
-e2fsprogs                     # |
-btrfs-progs                   # |
-exfatprogs                    # |
-ntfs-3g                       # |
-intel-ucode                   # CPU microcode for Intel
-man-db                        # Local documentation
-man-pages                     # |
-openssh                       # SSH control
+# Core system
+# Hyprland + Wayland essentials
+# Graphics drivers
+# Bluetooth
+# Audio
+# Network manager
+# Optional - git
 
-# Packages installed via pacman
+# Packages installed via pacman manually
 # =====
 
 # Core system / development
@@ -31,39 +28,7 @@ fzf                           # Fuzzy finder
 fd                            # Fast file search
 ripgrep                       # Fast grep replacement
 stow                          # Dotfile manager
-
-# Hyprland + Wayland essentials
-hyprland
-hyprpaper                     # Wallpaper uitility
-hypridle                      # Idle management daemon
-hyprlock                      # Screen lock
-waybar                        # Taskbar
-wofi                          # Application launcher
-wl-clipboard                  # Clipboard copy / paste
 cliphist                      # Clipboard history manager
-grim                          # Screenshots utility
-slurp                         # Region screenshot
-brightnessctl                 # Control device brightness
-playerctl                     # CLI media control
-polkit-gnome                  # Authentication agent
-xorg-xwayland                 # Xwayland and portals
-xdg-desktop-portal            # |
-xdg-desktop-portal-hyprland   # |
-xdg-user-dirs                 # |
-
-# Audio / multimedia
-pipewire
-pipewire-alsa
-pipewire-pulse
-pipewire-jack
-wireplumber
-
-# GPU (NVIDIA)
-nvidia
-nvidia-utils
-nvidia-settings
-libva-nvidia-driver     # VA-API support for NVIDIA
-egl-wayland             # NVIDIA + Wayland integration
 
 # Fonts
 noto-fonts

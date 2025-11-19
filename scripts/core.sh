@@ -1,19 +1,20 @@
 #!/usr/bin/env bash
 # ==========================================================
 # Installs core system / development tools.
-# Scripts assume you already setup the next packages via 
-# `archinstall`:
-# -  git                # Version control
-# -  networkmanager     # Main networking service 
-# -  dosfstools         # File system tools
-# -  e2fsprogs          |
-# -  btrfs-progs        |
-# -  exfatprogs         |
-# -  ntfs-3g            |
-# -  intel-ucode        # CPU microcode for Intel
-# -  man-db             # Local documentation
-# -  man-pages          |
-# -  openssh            # SSH control
+#
+# Archinstall setup:
+# - Desktop environment choose Hyprland
+# - Recommended graphics drivers
+# - Bluetooth, Audio (under Applications)
+# - NetworkManager (under Network configuration)
+# - Optional: git
+#
+# Setting up wifi inside Arch:
+# 1. `iwctl` (launches [iwd])
+# 2. `device list`
+# 3. `station <device-name> scan`
+# 4. `station <device-name> get-networks`
+# 5. `station <device-name> connect <network-name>`
 # ==========================================================
 set -e
 
