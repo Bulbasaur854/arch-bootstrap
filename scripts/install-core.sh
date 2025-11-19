@@ -1,20 +1,6 @@
 #!/usr/bin/env bash
 # ==========================================================
-# Installs core system / development tools.
-#
-# Archinstall setup:
-# - Desktop environment choose Hyprland
-# - Recommended graphics drivers
-# - Bluetooth, Audio (under Applications)
-# - NetworkManager (under Network configuration)
-# - Optional: git
-#
-# Setting up wifi inside Arch:
-# 1. `iwctl` (launches [iwd])
-# 2. `device list`
-# 3. `station <device-name> scan`
-# 4. `station <device-name> get-networks`
-# 5. `station <device-name> connect <network-name>`
+# Installs core system / development tools
 # ==========================================================
 set -e
 

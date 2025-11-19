@@ -2,6 +2,22 @@
 # List of packages installed
 # ==========================================================
 
+# ==========================================================
+# Archinstall setup:
+# - Desktop environment choose Hyprland
+# - Recommended graphics drivers
+# - Bluetooth, Audio (under Applications)
+# - NetworkManager (under Network configuration)
+# - Optional: git
+#
+# Setting up wifi inside Arch:
+# 1. `iwctl` (launches [iwd])
+# 2. `device list`
+# 3. `station <device-name> scan`
+# 4. `station <device-name> get-networks`
+# 5. `station <device-name> connect <network-name>`
+# ==========================================================
+
 # Packages installed via archinstall
 # =====
 
@@ -28,7 +44,6 @@ fzf                           # Fuzzy finder
 fd                            # Fast file search
 ripgrep                       # Fast grep replacement
 stow                          # Dotfile manager
-cliphist                      # Clipboard history manager
 
 # Fonts
 noto-fonts
