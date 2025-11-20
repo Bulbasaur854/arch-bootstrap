@@ -18,9 +18,9 @@ packages_to_install=(
   "stow"            # Dotfile manager
 )
 
+echo "Installing core system / development tools..."
 for package in "${packages_to_install[@]}"; do
   echo "Installing: $package"
   sudo pacman -S --noconfirm --needed "$package"
 done
-
 echo "Core packages installed successfully."

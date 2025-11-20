@@ -50,3 +50,9 @@ noto-fonts
 noto-fonts-emoji
 noto-fonts-cjk
 
+# Waybar setup
+# =====
+
+waybar
+impala                        # TUI wifi manager
+wiremix                       # TUI audio mixer  
