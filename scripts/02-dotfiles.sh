@@ -1,4 +1,8 @@
 #!/usr/bin/env bash
+# ==========================================================
+# Sets up my `dotfiles` repo,
+# using `stow` to symlink my configs
+# ==========================================================
 set -e
 
 ORIGINAL_DIR=$(pwd)
@@ -9,12 +13,14 @@ CONFIG_PATHS=(
   "$HOME/.config/backgrounds"
   "$HOME/.bashrc"
   "$HOME/.config/hypr/hyprlock.conf"
+  "$HOME/.config/hypr/hyprpaper.conf"
   "$HOME/.config/starship.toml"
 )
 PACKAGES=(
   "backgrounds"
   "bashrc"
   "hyprlock"
+  "hyprpaper"
   "starship"
 )
 

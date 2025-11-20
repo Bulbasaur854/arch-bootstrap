@@ -16,6 +16,8 @@ packages_to_install=(
   "fd"              # Fast file search
   "ripgrep"         # Fast grep replacement
   "stow"            # Dotfile manager
+  "jq"              # JSON `sed`
+  "starship"        # Terminal prompt
 )
 
 echo "Installing core system / development tools..."

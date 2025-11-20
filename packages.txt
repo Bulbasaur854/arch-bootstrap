@@ -50,6 +50,11 @@ noto-fonts
 noto-fonts-emoji
 noto-fonts-cjk
 
+# Pywal setup
+# =====
+
+python-pywal                  # Theme contorller
+
 # Waybar setup
 # =====
 
