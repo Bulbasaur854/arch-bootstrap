@@ -15,6 +15,7 @@ CONFIG_PATHS=(
   "$HOME/.config/hypr/hyprlock.conf"
   "$HOME/.config/hypr/hyprpaper.conf"
   "$HOME/.config/starship.toml"
+  "$HOME/.config/waybar/"
 )
 PACKAGES=(
   "backgrounds"
@@ -22,6 +23,7 @@ PACKAGES=(
   "hyprlock"
   "hyprpaper"
   "starship"
+  "waybar"
 )
 
 if ! pacman -Qi "stow" &> /dev/null 2>&1; then
