@@ -17,5 +17,5 @@ mkdir -p "$HOME/.cache/wal"
 echo "Pywal setup is complete."
 
 # Pick wallpaper and generate theme
-wall = "$HOME/.config/backgrounds/group_of_pink_flowers.jpg"
+wall="$HOME/.config/backgrounds/group_of_pink_flowers.jpg"
 wal -q -i "$wall"
