@@ -31,3 +31,11 @@ for package in "${packages_to_install[@]}"; do
   sudo pacman -S --noconfirm --needed "$package"
 done
 echo "Core packages installed successfully."
+
+# Setup AUR installer (`yay`)
+echo "Setting up AUR installer..."
+cd $HOME
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+echo "AUR installer setup successful."
