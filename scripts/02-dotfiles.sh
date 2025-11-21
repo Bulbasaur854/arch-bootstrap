@@ -15,6 +15,7 @@ CONFIG_PATHS=(
   "$HOME/.config/hypr/hyprland.conf"
   "$HOME/.config/hypr/hyprlock.conf"
   "$HOME/.config/hypr/hyprpaper.conf"
+  "$HOME/.config/kitty/kitty.conf"
   "$HOME/.config/starship.toml"
   "$HOME/.config/waybar"
 )
@@ -24,6 +25,7 @@ PACKAGES=(
   "hyprland"
   "hyprlock"
   "hyprpaper"
+  "kitty"
   "starship"
   "waybar"
 )
