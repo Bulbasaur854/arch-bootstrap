@@ -12,6 +12,7 @@ BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 CONFIG_PATHS=(
   "$HOME/.config/backgrounds"
   "$HOME/.bashrc"
+  "$HOME/.config/hypr/hyprland"
   "$HOME/.config/hypr/hyprlock.conf"
   "$HOME/.config/hypr/hyprpaper.conf"
   "$HOME/.config/starship.toml"
@@ -20,13 +21,14 @@ CONFIG_PATHS=(
 PACKAGES=(
   "backgrounds"
   "bashrc"
+  "hyprland"
   "hyprlock"
   "hyprpaper"
   "starship"
   "waybar"
 )
 
-if ! pacman -Qi "stow" &> /dev/null 2>&1; then
+if ! pacman -Qi "stow" &>/dev/null 2>&1; then
   echo "Install stow first"
   exit 1
 fi
