@@ -20,6 +20,9 @@ packages_to_install=(
   "starship"   # Terminal prompt
   "bat"        # Better `cat`
   "zoxide"     # Better `cd`
+  "p7zip"      # 7-zip
+  "resvg"      # SVG preview
+  "yazi"       # File explorer
 )
 
 echo "Installing core system / development tools..."
