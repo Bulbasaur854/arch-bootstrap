@@ -16,7 +16,11 @@ CONFIG_PATHS=(
   "$HOME/.config/hypr/hyprlock.conf"
   "$HOME/.config/hypr/hyprpaper.conf"
   "$HOME/.config/starship.toml"
-  "$HOME/.config/waybar/"
+  "$HOME/.config/waybar/config.jsonc"
+  "$HOME/.config/waybar/style.css"
+  "$HOME/.config/waybar/scripts/cava-bars.sh"
+  "$HOME/.config/waybar/scripts/launch-impala.sh"
+  "$HOME/.config/waybar/scripts/launch-wiremix.sh"
 )
 PACKAGES=(
   "backgrounds"
