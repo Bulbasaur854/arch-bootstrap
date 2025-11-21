@@ -12,7 +12,7 @@ BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 CONFIG_PATHS=(
   "$HOME/.config/backgrounds"
   "$HOME/.bashrc"
-  "$HOME/.config/hypr/hyprland"
+  "$HOME/.config/hypr/hyprland.conf"
   "$HOME/.config/hypr/hyprlock.conf"
   "$HOME/.config/hypr/hyprpaper.conf"
   "$HOME/.config/starship.toml"
