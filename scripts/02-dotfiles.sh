@@ -12,18 +12,10 @@ BACKUP_DIR="$HOME/.dotfiles_backup_$(date +%Y%m%d%H%M%S)"
 CONFIG_PATHS=(
   "$HOME/.bashrc"
   "$HOME/.config/backgrounds"
-  "$HOME/.config/hypr/autostart.conf"
-  "$HOME/.config/hypr/hyprland.conf"
-  "$HOME/.config/hypr/hyprlock.conf"
-  "$HOME/.config/hypr/hyprpaper.conf"
-  "$HOME/.config/hypr/input.conf"
-  "$HOME/.config/hypr/keybindings.conf"
-  "$HOME/.config/hypr/looknfeel.conf"
-  "$HOME/.config/hypr/monitors.conf"
-  "$HOME/.config/hypr/programs.conf"
-  "$HOME/.config/hypr/workspaces.conf"
-  "$HOME/.config/kitty/kitty.conf"
+  "$HOME/.config/hypr"
+  "$HOME/.config/kitty"
   "$HOME/.config/starship.toml"
+  "$HOME/.config/wal"
   "$HOME/.config/waybar"
 )
 PACKAGES=(
@@ -33,6 +25,7 @@ PACKAGES=(
   "hyprlock"
   "hyprpaper"
   "kitty"
+  "pywal"
   "starship"
   "waybar"
 )
@@ -53,18 +46,18 @@ fi
 
 # Check if the clone was successful
 if [ $? -eq 0 ]; then
-  echo "Backing up old configs"
-  mkdir -p "$BACKUP_DIR"
+  echo "Removing old configs..."
   for path in "${CONFIG_PATHS[@]}"; do
-    [ -e "$path" ] || continue
-    mv "$path" "$BACKUP_DIR"/
+    rm -rf "$path"
   done
 
-  echo "Stowing dotfiles"
+  echo "Stowing dotfiles..."
   cd "$REPO_NAME"
   for package in "${PACKAGES[@]}"; do
     stow "$package"
   done
+  echo "Stowing successful, refreshing hyprctl"
+  hyprctl reload
 else
   echo "Failed to clone the repository"
   exit 1
