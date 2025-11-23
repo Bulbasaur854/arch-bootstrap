@@ -21,9 +21,7 @@ CONFIG_PATHS=(
 PACKAGES=(
   "backgrounds"
   "bashrc"
-  "hyprland"
-  "hyprlock"
-  "hyprpaper"
+  "hypr"
   "kitty"
   "pywal"
   "starship"
