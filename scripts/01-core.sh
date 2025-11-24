@@ -39,3 +39,9 @@ git clone https://aur.archlinux.org/yay.git
 cd yay
 makepkg -si
 echo "AUR installer setup successful."
+
+# Setup fonts
+echo "Setting up fonts..."
+cd $HOME
+yay -S --noconfirm getnf
+getnf -i DepartureMono
